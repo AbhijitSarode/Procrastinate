@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+#logo {
+  aspect-ratio: 1;
+  width: 5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.countdown {}
+
+.tasks {}
+
+h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0 auto;
+  width: 50px;
+}
+
+.time {
+  font-size: 5rem;
+  text-align: center;
+}
+
+li {
+  font-size: 1.5rem;
+  margin-top: 8px;
+}
+
+li::marker {
+  color: hotpink;
+  font-size: 1.1rem;
+}
