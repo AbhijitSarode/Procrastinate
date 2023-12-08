@@ -8,6 +8,7 @@ function createWindow() {
   const mainWindow = new BrowserWindow({
     width: 700,
     height: 360,
+    icon: path.join(__dirname, '../resources/icon.icns'),
     show: false,
     autoHideMenuBar: true,
     resizable: false,

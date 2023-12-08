@@ -1,5 +1,5 @@
 appId: com.electron.app
-productName: procrastinate
+productName: Procrastinate
 directories:
   buildResources: build
 files:
@@ -8,7 +8,7 @@ files:
 asarUnpack:
   - resources/**
 win:
-  executableName: procrastinate
+  executableName: Procrastinate
 nsis:
   artifactName: ${name}-${version}-setup.${ext}
   shortcutName: ${productName}
@@ -16,6 +16,7 @@ nsis:
   createDesktopShortcut: always
 mac:
   entitlementsInherit: build/entitlements.mac.plist
+  icon: "resources/icon.icns"
   extendInfo:
     - NSCameraUsageDescription: Application requests access to the device's camera.
     - NSMicrophoneUsageDescription: Application requests access to the device's microphone.
@@ -34,6 +35,3 @@ linux:
 appImage:
   artifactName: ${name}-${version}.${ext}
 npmRebuild: false
-publish:
-  provider: generic
-  url: https://example.com/auto-updates
